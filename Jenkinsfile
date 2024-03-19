@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('checkout') {
             steps{
-                git "https://github.com/sainathkasturi/SparkJavaWarProject.git"
+                git clone "https://github.com/sainathkasturi/SparkJavaWarProject.git"
             }
         }
         stage ('build') {
